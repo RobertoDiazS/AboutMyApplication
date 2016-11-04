@@ -1,0 +1,47 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.usuario.myapplication.EmailFragment">
+
+    <Button
+        android:id="@+id/contactBtn"
+        android:text="CONTACTAME RIGHT NOW!"
+        android:drawableRight="@mipmap/ic_email_white_24dp"
+        android:theme="@style/AccentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/msgHolder"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Su mensaje"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/msgEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:drawableRight="@mipmap/ic_send_white_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:visibility="gone"
+        android:theme="@style/AccentButton" />
+
+</LinearLayout>
